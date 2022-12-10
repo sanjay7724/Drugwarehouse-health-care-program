@@ -23,7 +23,6 @@ class DrugWareHouse{
         System.out.println("2. Check medicine availability");
         System.out.println("3. Add medicine");
         System.out.println("4. Remove medicine");
-        System.out.println("Exit");
         System.out.println("ENTER YOUR CHOICE");
         int choice;
         choice = s.nextInt();
@@ -31,7 +30,7 @@ class DrugWareHouse{
             case 1:
                 int size = medicines.size();
                 System.out.println("The Available medicines are:");
-                for(int i = 0; i<= size;i++){
+                for(int i = 0; i< size;i++){
                     System.out.println(medicines.get(i));
                 
             }break;
@@ -42,8 +41,8 @@ class DrugWareHouse{
                     System.out.println(med+" is Available");
                 }else{
                     System.out.println(med+" is unavailable");
-                }break;
-            
+                }
+            break;
             case 3:
                 System.out.println("Enter the medicine name:");
                 String med1 = s.next();
@@ -51,8 +50,8 @@ class DrugWareHouse{
                     System.out.println("Medicine is already available");
                 }else{
                     medicines.add(med1);
-                }break;
-            
+                }
+            break;
             case 4:
                 System.out.println("Enter the name of the medicine to be removed:");
                 String med2 = s.next();
@@ -60,9 +59,8 @@ class DrugWareHouse{
                     medicines.remove(med2);
                 }else{
                     System.out.println("Medicine is unavailable");
-                }break;
-            case 5:
-                break;
+                }
+            break;
                 
                 
         }
