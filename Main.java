@@ -50,7 +50,12 @@ class DrugWareHouse{
                     System.out.println("Medicine is already available");
                 }else{
                     medicines.add(med1);
-                }
+                }int size1 = medicines.size();
+                System.out.println("The  medicines are:");
+                for(int i = 0; i< size1;i++){
+                    System.out.println(medicines.get(i));
+                
+            }
             break;
             case 4:
                 System.out.println("Enter the name of the medicine to be removed:");
@@ -59,7 +64,12 @@ class DrugWareHouse{
                     medicines.remove(med2);
                 }else{
                     System.out.println("Medicine is unavailable");
-                }
+                }int size2 = medicines.size();
+                System.out.println("The  medicines are:");
+                for(int i = 0; i< size2;i++){
+                    System.out.println(medicines.get(i));
+                
+            }
             break;
                 
                 
